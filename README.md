@@ -6,5 +6,6 @@ Prerequisites:
 
 Creates:
 * S3 buckets for website content, bare domain redirect, and logs
+* SSL Certificate for bare domain and *.domain
 * Two CloudFront distributions (one for redirect, one for website)
 * Route53 aliases for the CloudFront distributions
