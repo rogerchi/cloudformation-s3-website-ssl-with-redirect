@@ -75,7 +75,7 @@ Resources:
             Action:
               - s3:GetObject
             Resource: !Sub "arn:aws:s3:::www.${DomainName}/*"
- LogBucket:
+  LogBucket:
     Type: "AWS::S3::Bucket"
     Properties: 
       BucketName: !Sub ${DomainName}-logs
