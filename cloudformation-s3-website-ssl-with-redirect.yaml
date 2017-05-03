@@ -121,6 +121,7 @@ Resources:
           - POST
           - PUT
           TargetOriginId: myS3Origin
+          Compress: True
           MinTTL: 300
           DefaultTTL: 300
           ForwardedValues:
@@ -162,8 +163,8 @@ Resources:
           - POST
           - PUT
           TargetOriginId: myS3OriginBare
-          MinTTL: 300
-          DefaultTTL: 300
+          Compress: True
+          DefaultTTL: 604800
           ForwardedValues:
             QueryString: 'false'
             Cookies:
